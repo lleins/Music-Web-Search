@@ -1,0 +1,396 @@
+html{
+
+    overflow-x: hidden;
+}
+
+body{
+
+    background-color: rgba(12, 15, 22, .8);
+    background-image: url("BackMain1.jpg");
+    background-size: cover;
+    background-blend-mode: multiply;
+
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+
+#NavigationBar{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 75%;
+    margin-top: 2%;
+    z-index: 100;
+    
+}
+
+.Logo{
+    position: fixed;
+    background-color: rgb(52, 164, 255);
+    color: white;
+    font-size: 13px;
+    font-family: sans-serif;
+    font-variant: small-caps;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 12px;
+    display: inline;
+    margin-top: 10px;
+    margin-left: 20px;
+    transition: .5s;
+    border-color: rgb(52, 164, 255);  
+    z-index: 100;
+    font-weight: bold;
+}   
+
+.Item{
+    color: rgba(255,255,255,1);
+    font-family: sans-serif;
+    font-size: 13px;
+    font-variant: small-caps;
+    text-decoration: none;
+    transition: ease .3s;
+	background: linear-gradient(white, white) bottom / 0 .15em no-repeat;
+    background-position: left bottom;
+    letter-spacing: 1px;
+}
+
+
+
+.Item:hover {
+    color: rgba(255,255,255,1);
+	background-size: 100% .15em;
+    font-size: 13px;
+    transition: ease .3s;
+}
+
+
+p{
+    color:white;
+}
+
+
+
+.background{
+    position: fixed;
+    width: 100%;
+    padding: 50px;
+    background-color: rgb(21, 28, 41);
+    margin-top: -2%;
+    border-bottom: 1px solid white;
+    transition: 0.3s;
+    margin-left: -10px;
+    z-index: 100;
+}
+
+
+
+.BlurImg{
+
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    z-index: -1;
+    margin-left: -6px;
+
+}
+
+
+#TextBox{
+    position: relative;
+    top: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.TextInput{
+    display: inline;
+    color: white;
+    background-color: rgb(35, 47, 70);
+    border-radius: 5px;
+    border: 1px solid white;
+    margin: 20px;
+    width: 350px;
+    height: 40px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    transition: ease .5s;
+    z-index: 50;
+}
+
+.TextInput:hover{
+    transition: ease .5s;
+    background-color: rgb(45, 61, 88);
+
+}
+
+#Result{
+
+    background-color: rgba(12, 15, 22, 1);
+    position: relative;
+    top: 200px;
+    height: 100%;
+    width: 101%;
+    margin-left: -7px;
+    border-top: 1px solid white;
+    z-index: 50;
+    color: white;
+}
+
+#ButtonBox{
+    position: relative;
+    top: 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.ButtonSearch{
+    font-variant: small-caps;
+    font-family: sans-serif;
+    color: white;
+    background-color: rgb(21, 28, 41);
+    font-size: 13px;
+    border-radius: 4px;
+    padding: 10px;
+    border: none;
+    transition: ease .5s;
+    letter-spacing: 1px;
+    
+}
+
+.ButtonSearch:hover{
+    background-color: rgb(35, 47, 70);
+    transition: ease .5s;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+.DiscoverTitle{
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-variant: small-caps;
+    position: relative;
+    text-align: center;
+    z-index: 100;
+}
+
+#FirstResult{
+    position: relative;
+    height: 100%;
+    background-color: rgba(12, 15, 22, 1);
+    
+}
+
+#SecondResult{
+    position: relative;
+    height: 100%;
+    background-color: rgba(12, 15, 22, 1);
+
+}
+
+#ThirdResult{
+    position: relative;
+    height: 100%;
+    background-color: rgba(12, 15, 22, 1);
+
+}
+
+#FourthResult{
+    position: relative;
+    height: 100%;
+    background-color: rgba(12, 15, 22, 1);
+
+}
+
+#FifthResult{
+    position: relative;
+    height: 100%;
+    background-color: rgba(12, 15, 22, 1);
+
+}
+
+#SixthResult{
+    position: relative;
+    height: 150%;
+    background-color: rgba(12, 15, 22, 1);
+}
+
+.AlbumImg{
+    transition: .5s ease;
+}
+
+.AlbumImg:hover{
+    margin: 5px;
+    transition: .5s ease;
+}
+
+.ImageAlbum{
+    text-align: center;
+    margin-right: 2%;
+    padding-bottom: 3%;
+    transition: .5s ease;
+}
+
+
+.NameAlbum{
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-variant: small-caps;
+    text-align: center;
+    padding-right: 2%;
+    padding-bottom: 3%;
+}
+
+.RankClass{
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-variant: small-caps;
+    text-align: center;
+    padding-right: 2%;
+    padding-bottom: 2%;
+}
+
+
+a{
+
+    color: rgb(52, 164, 255);
+}
+
+.LogoImage{
+    position: fixed;
+    z-index: 200;
+    top: 22px;
+    left: 37px;
+}
+
+.LogoLink{
+    cursor: default;
+    pointer-events: none;
+}
+
+
+@media all and (max-width: 1070px) {
+    #Result{
+        width: 102%;
+    }
+    .background{
+        padding: 40px;
+    }
+
+    .Logo{
+        font-size: 10px; 
+        padding: 6px;
+    }
+
+    .LogoImage{
+        content: url(LogoV4Resized.png);
+    }
+
+    #NavigationBar{
+    margin-left: 75%;
+    margin-top: 3%;
+    }
+
+}
+
+@media all and (max-width: 700px) {
+    #Result{
+        width: 105%;
+    }
+
+    .DiscoverTitle{
+        font-size: 15px;
+
+    }
+
+    .LogoImage{
+        position: fixed;
+        top: 17px;
+        left: 37px;
+           
+        
+    }
+    
+    .TextInput{
+        width: 125px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .ButtonSearch{
+        padding: 6px;
+        font-size: 10px;
+
+    }
+
+    .background{
+        padding: 30px;
+    }
+    
+    .Logo{
+        font-size: 10px; 
+        padding: 6px;
+        margin-top: 6px;
+    }
+
+
+    #NavigationBar{
+        margin-left: 55%;
+        margin-top: 3%;
+    }
+
+    .NameAlbum{
+        font-size: 12px;
+    }
+
+    .RankClass{
+        font-size: 12px;
+    }
+    
+    #ButtonBox{
+        top: 140px;  
+    }
+
+    #TextBox{
+        top: 120px;
+    }
+
+    .Item{ 
+        font-size: 10px;   
+    }
+
+    .Item:hover {
+        color: rgba(255,255,255,1);
+        background-size: 100% .15em;
+        font-size: 10px;
+        transition: ease .3s;
+    }
+
+}
