@@ -1,0 +1,157 @@
+<html>
+
+
+<head>
+    <meta charset="UTF8"></meta>
+	<link href="Search.css" type="text/css" rel="stylesheet">
+	<script src="Search.js" defer></script>
+    <title>Music Web Search</title>
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+</head>
+
+
+<body>
+    <h6 class="background"></h6>
+    <button class="Logo" onclick="location.href='Search.html'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Music Web Search</button>
+    <a class="LogoLink" href="Search.html"><img class="LogoImage" src="Images/LogoV4.png"></a>
+    
+    <div id="BlurDrop">
+        <p class="BlurImg"></p>
+    </div>
+
+    <div id="NavigationBar">
+    
+        <a class="Item Home" HREF="Main.html">Home</a>
+        <a class="Item About" HREF="Search.html">Search</a>
+        
+
+
+    </div>
+
+
+    <div id="TextBox">
+        <input type="text" class="TextInput Song" id="TextInputSong" placeholder=" Song Name Here">
+        <input type="text" class="TextInput Artist" id="TextInputArtist" placeholder=" Artist Name Here">
+        <input type="text" class="TextInput Album" id="TextInputAlbum" placeholder=" Album Name Here">
+        
+    </div>
+    
+    <div id="ButtonBox">
+        <button class="ButtonSearch Song" onclick="displayTextSong()">Search</button>
+        <button class="ButtonSearch Artist" onclick="displayTextArtist()">Search</button>
+        <button class="ButtonSearch Album" onclick="displayTextAlbum()">Search</button>
+
+    </div>
+
+   
+
+    <div id="Result">
+
+        <h6 id="TitleAlbum" class="DiscoverTitle">Search Above To Discover New Music</h6>
+
+        <div id="FirstResult">
+        
+            
+            <div class="ImageAlbum">
+                <img class="AlbumImg" id="Image1" src="">
+            </div>
+
+            <p id="Rank1" class="RankClass"></p>
+
+            <p id="Name1" class="NameAlbum"></p>
+            <p id="ArtistName1" class="NameAlbum"></p>
+        </div>
+
+
+
+        <div id="SecondResult">
+
+            <div class="ImageAlbum">
+                <img class="AlbumImg" id="Image2" src="">
+            </div>
+
+            <p id="Rank2" class="RankClass"></p>
+
+            <p id="Name2" class="NameAlbum"></p>
+            <p id="ArtistName2" class="NameAlbum"></p>
+            
+        </div>
+
+
+
+        <div id="ThirdResult">
+
+            <div class="ImageAlbum">
+                <img class="AlbumImg" id="Image3" src="">
+            </div>
+            
+            <p id="Rank3" class="RankClass"></p>
+
+            <p id="Name3" class="NameAlbum"></p>
+            <p id="ArtistName3" class="NameAlbum"></p>
+        </div>
+
+        <div id="FourthResult">
+
+            <div class="ImageAlbum">
+                <img class="AlbumImg" id="Image4" src="">
+            </div>
+
+            <p id="Rank4" class="RankClass"></p>
+
+            <p id="Name4" class="NameAlbum"></p>
+            <p id="ArtistName4" class="NameAlbum"></p>
+        </div>
+
+        <div id="FifthResult">
+
+            <div class="ImageAlbum">
+                <img class="AlbumImg" id="Image5" src="">
+            </div>
+
+            <p id="Rank5" class="RankClass"></p>
+
+            <p id="Name5" class="NameAlbum"></p>
+            <p id="ArtistName5" class="NameAlbum"></p>
+        </div>
+
+        <div id="SixthResult">
+
+            <div class="ImageAlbum" id="FinalImage">
+                <img class="AlbumImg" id="Image6" src="">
+            </div>
+
+            <p id="Name6" class="NameAlbum"></p>
+            <p id="ArtistName6" class="NameAlbum"></p>
+        </div>
+
+    </div>
+    
+    
+
+</body>
+
+
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

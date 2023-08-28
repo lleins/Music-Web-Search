@@ -1,7 +1,7 @@
 body{
 
     background-color: rgba(12, 15, 22, .8);
-    background-image: url("BackMain1.jpg");
+    background-image: url("Images/BackMain1.jpg");
     background-size: cover;
     background-blend-mode: multiply;
     
@@ -157,7 +157,7 @@ p{
     }
 
     .LogoImage{
-        content: url(LogoV4Resized.png);
+        content: url(Images/LogoV4Resized.png);
     }
 
     .ExploreButton{
