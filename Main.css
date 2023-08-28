@@ -8,8 +8,9 @@ body{
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-
-}
+    padding: 0;
+    margin: 0;
+}   
 
 
 @keyframes fadeInAnimation {
@@ -30,16 +31,16 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-left: 75%;
+    margin-left: 70%;
     margin-top: 2%;
-    
+    margin-right: 10%;
 }
 
 
 
 .Logo{
     position: fixed;
-    background-color: rgb(52, 164, 255);
+    background-color: rgb(21, 28, 41);
     color: white;
     font-size: 13px; 
     font-weight: bold;
@@ -49,24 +50,23 @@ body{
     border-radius: 8px;
     padding: 12px;
     display: inline;
-    margin-top: 10px;
-    margin-left: 20px;
+    margin-top: 16px;
+    margin-left: 110px;
     transition: .5s;
-    border-color: rgb(52, 164, 255);  
+    border: 1px solid rgb(21, 28, 41);
 }   
 
 
 .Item{
     color: rgba(255,255,255,1);
     font-family: sans-serif;
-    font-size: 13px;
-    font-variant: small-caps;
+    font-size: 16px;
     text-decoration: none;
     transition: ease .3s;
 	background: linear-gradient(white, white) bottom / 0 .15em no-repeat;
     background-position: left bottom;
     letter-spacing: 1px;
-    
+    padding-bottom: 3px;
 }
 
 
@@ -75,7 +75,7 @@ body{
 .Item:hover {
     color: rgba(255,255,255,1);
 	background-size: 100% .15em;
-    font-size: 13px;
+    font-size: 16px;
     transition: ease .3s;
 }
 
@@ -104,7 +104,7 @@ p{
     font-family: sans-serif;
     color: rgb(255, 255, 255);
     font-size: 35px;
-    position: fixed;
+    position: absolute;
     margin-top: 20%;
     margin-left: 20%;
     margin-right: 20%;
@@ -114,11 +114,11 @@ p{
 }
 
 .ExploreButton{
-    font-variant: small-caps;
+    
     font-family: sans-serif;
     color: white;
     background-color: rgb(21, 28, 41);
-    position: fixed;
+    position: absolute;
     margin-top: 35%;
     font-size: 15px;
     border-radius: 4px;
@@ -127,20 +127,27 @@ p{
     margin-right: 50%;
     border: none;
     transition: ease .5s;
+    letter-spacing: 1px;
 }
 
 .ExploreButton:hover{
     background-color: rgb(35, 47, 70);
     transition: ease .5s;
-    padding: 20px;
+    transform: scale(1.05);
     text-shadow: 2px 2px 4px #000000;
+    cursor: pointer;
+}
+.ExploreButton:active{
+    
+    transform: scale(.95);
+    
 }
 
 .LogoImage{
     position: fixed;
     z-index: 120;
     top: 22px;
-    left: 37px;
+    left: 110px;
 }
 
 .LogoLink{
@@ -148,7 +155,16 @@ p{
     pointer-events: none;
 }
 
- 
+
+#Footer{
+    position: absolute;
+    width: 100%;
+    background-color: rgb(21, 28, 41);
+    height: 100px;
+    top: 700px;
+    border-top: 1px solid white;
+}
+
 @media all and (max-width: 1070px) {
     
     .TitleClass{
@@ -156,9 +172,6 @@ p{
         margin-top: 30%;
     }
 
-    .LogoImage{
-        content: url(Images/LogoV4Resized.png);
-    }
 
     .ExploreButton{
         margin-top: 45%;
@@ -175,18 +188,14 @@ p{
     }
 
     .background{
-        padding: 40px;
+        padding: -50px;
     }
 
-    .Logo{
-        font-size: 10px; 
-        padding: 6px;
+    .Logo{ 
+        padding: 13px;
     }
 
-    #NavigationBar{
-    margin-left: 75%;
-    margin-top: 3%;
-    }
+   
 
 
 }
@@ -216,8 +225,8 @@ p{
     .LogoImage{
         position: fixed;
         top: 17px;
-        left: 37px;
-           
+        left: 110px;
+        content: url(Images/LogoV4Resized.png);
         
     }
  
@@ -229,7 +238,7 @@ p{
     .Logo{
         font-size: 10px; 
         padding: 6px;
-        margin-top: 6px;
+        margin-top: 13px;
     }
 
     #NavigationBar{
@@ -240,7 +249,8 @@ p{
     
 
     .Item{ 
-        font-size: 10px;   
+        font-size: 10px; 
+        margin-top: -1px;   
     }
 
     .Item:hover {
